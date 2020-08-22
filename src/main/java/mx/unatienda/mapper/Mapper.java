@@ -19,7 +19,7 @@ public class Mapper {
 		return productDTO; 
 	}
 	
-	//Convertir de ProductDTO a Product
+		//Convertir de ProductDTO a Product
 	public Product fromProductDTO(ProductDTO productDTO) {
 		Product product = new Product();
 		product.setId(productDTO.getId());
