@@ -19,13 +19,17 @@ public class Product {
 	private String marca;
 	private String descripcion;
 	
-	public Product(String nombre, Double precio, Long id, String tipo, String marca, String descripcion) {
+	public Product(Long id, String nombre, Double precio, String tipo, String marca, String descripcion) {
 		this.nombre = nombre;
-		this.precio = precio;
+		this.precio = precio; 
 		this.id = id;
 		this.tipo = tipo;
 		this.marca = marca;
 		this.descripcion = descripcion;
+	}
+	
+	public Product() {
+		
 	}
 
 	public Long getId() {
