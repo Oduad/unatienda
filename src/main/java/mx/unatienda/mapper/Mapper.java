@@ -16,9 +16,10 @@ public class Mapper {
 		productDTO.setTipo(entity.getTipo());
 		productDTO.setMarca(entity.getMarca());
 		productDTO.setDescripcion(entity.getDescripcion());
-		return productDTO;
+		return productDTO; 
 	}
 	
+	//Convertir de ProductDTO a Product
 	public Product fromProductDTO(ProductDTO productDTO) {
 		Product product = new Product();
 		product.setId(productDTO.getId());
