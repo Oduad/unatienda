@@ -1,7 +1,6 @@
 package mx.unatienda.dto;
 
 public class ProductDTO {
-
 	private Long id;
 	private String nombre;
 	private Double precio;
@@ -18,6 +17,10 @@ public class ProductDTO {
 		this.descripcion = descripcion;
 	}
 
+	public ProductDTO() {
+		
+	}
+	
 	public Long getId() {
 		return id;
 	}
