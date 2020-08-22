@@ -2,22 +2,23 @@ package mx.unatienda.controller;
 
 import java.util.List;
 import mx.unatienda.dto.ProductDTO;
+import mx.unatienda.entity.Product;
  
 public interface ProductController {
 
-	ProductDTO findById();
+	ProductDTO getProductById(Long productId);
 	
 	List<ProductDTO> getAllProducts();
 	
-	ProductDTO create();
+	ProductDTO createProduct(ProductDTO productDTO);
 	
-	ProductDTO update();
+	ProductDTO updateProduct(ProductDTO productDTO);
 	
-	ProductDTO delete();
+	void deleteProduct(Long productId);
 	
-	List<ProductDTO> findByRangeOfPrice();
+	List<ProductDTO> findByRangeOfPrice(double d1, double d2);
 	
-	List<ProductDTO> orderByPrice();
+	List<ProductDTO> orderByPrice(double price);
 	
-	ProductDTO findByMark();
+	List<ProductDTO> findByMark(String marca);
 }
